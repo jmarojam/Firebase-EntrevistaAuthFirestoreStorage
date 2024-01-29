@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pagina de Entrevista</title>
+  <script type="module" src="firebaseconnect.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    
+    <input type="text" id="preguntaInput" placeholder="Introduce tu pregunta">
+    <button id="agregarPreguntaBtn">Agregar Pregunta</button>
+    <button id="iniciarEntrevistaBtn">Iniciar Entrevista</button>
+
+    <div id="areaPreguntas"></div>
+    <video id="webcamVideo" autoplay></video>
+    
+    <div class="botonesGrabacion">
+      <button id="grabarBtn">Grabar Respuesta</button>
+      <button id="detenerGrabacionBtn" disabled>Detener Grabación</button>
+    </div>
+  </div>
+
+  <script type="module" src="interview.js"></script>
+</body>
+</html>

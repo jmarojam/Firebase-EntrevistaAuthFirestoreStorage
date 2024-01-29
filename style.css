@@ -1,0 +1,135 @@
+/* Reset básico para estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Estilo para el logo, asumiendo que el logo es una imagen */
+img[alt="logo"] {
+  display: block;
+  width: 200px; 
+  height: 200px; 
+  margin: 0 auto 30px; 
+  border-radius: 50%; 
+  background: #fff; 
+  border: 2px solid #000; 
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* Estilo para el contenedor del formulario */
+.formulario-iniciosesion {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+/* Estilo para el título de login */
+.logintitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos de los inputs y labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para el botón de iniciar sesión */
+input[type="submit"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Estilo para el enlace de registro */
+a {
+  display: inline-block;
+  width: calc(50% - 10px);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid#007bff;
+}
+
+/* Ajuste para que el botón y el enlace estén alineados horizontalmente */
+#formulario-sesion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*para la pagina interview*/
+
+
+#preguntaInput, #agregarPreguntaBtn, #iniciarEntrevistaBtn, #grabarBtn, #detenerGrabacionBtn {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#preguntaInput {
+  width: 40%;
+}
+
+button {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e8e8e8;
+}
+
+#areaPreguntas {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  height: 40px; 
+}
+
+video {
+  width: 100%;
+  height: auto; 
+}
+
+.botonesGrabacion {
+  display: flex;
+  justify-content: space-around;
+}
+
+#grabarBtn, #detenerGrabacionBtn {
+  width: 45%; 
+}
